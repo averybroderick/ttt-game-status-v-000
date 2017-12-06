@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
     board[combo].all? do |char|
-      char == "X" || char == "O"? true : false
+      char == "X" || char == "O"? return combo : false
     end
   end
 end
