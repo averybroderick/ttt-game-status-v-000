@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
     combo.each do |cell|
-      puts "#{cell}"
+      puts "#{board[cell]}"
     end
   end
 end
