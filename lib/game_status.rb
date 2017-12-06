@@ -24,3 +24,9 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  board.all? do |char|
+    char == "X" || char == "O"? true : false
+  end
+end
