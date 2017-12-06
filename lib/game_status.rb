@@ -20,9 +20,10 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     board[combo].all? do |char|
       if char == "X" || char == "O"
-        return combo 
+        return combo
       else
         return false
+      end
     end
   end
 end
