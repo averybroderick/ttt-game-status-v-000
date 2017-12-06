@@ -38,3 +38,6 @@ end
 def over?(board)
   full?(board) || won?(board) || draw?(board)? true : false
 end
+
+def winner(board)
+  won?(board)? board[won(board)[0]] : nil 
